@@ -6,7 +6,7 @@ body{
 .input-styled{
   display: inline-block;
   border-radius: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   padding: 0 20px;
   height: 50px;

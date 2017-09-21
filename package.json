@@ -1,5 +1,5 @@
 {
-	"name": "intro-webrtc-demoapp",
+	"name": "rrtc",
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
@@ -7,6 +7,7 @@
 		"coffeescript": "^1.12.7",
 		"connect": "^3.6.3",
 		"ejs": "2.x",
+		"engine.io": "^3.1.1",
 		"express": "4.x",
 		"express.io": "1.x",
 		"forever": "^0.15.3",
