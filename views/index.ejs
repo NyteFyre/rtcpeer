@@ -10,7 +10,7 @@
 	
 
     <!-- Bootstrap -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -34,8 +34,12 @@
           
         </div>
         <ul class="nav navbar-nav menu-right">
-          <li><a href="https://webrtc.com"></a></li>
-        </ul>
+	
+  <li><a href="/">> Home</a></li>
+  <li><a href="#contact">> Contact</a></li>
+  <li><a href="#about">> About</a></li>
+  <li><a href="#help">> Help</a></li>
+</ul>
       </div>
     </nav>
     
@@ -45,12 +49,12 @@
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2 ">
             <div class="starter-text">
-              <h1 style="color:#000000;"><strong>WebRTC</strong></h1>
-              <p class="lead" style="color:#000000;">Peer to Peer Learning</p>
+              <h1 style="color:white;font-size: 350%"><strong>WebRTC</strong></h1><br>
+              <p class="lead" style="color:white;font-size: 182%">Peer to Peer Learning</p>
             </div>
             <div class="starter-call-to-action">
-              <a href="" id="enterAsStudent" class="call-group">Student</a>
-              <a href="" id="enterAsExpert" class="call-group">Expert</a>
+              <a href="" id="enterAsStudent" class="call-group" style="color:white;font-size: 130%">Student</a>
+              <a href="" id="enterAsExpert" class="call-group" style="color:white;font-size: 130%">Expert</a>
             </div>
           </div>
         </div>
@@ -66,7 +70,7 @@
 		  
 		  <form class="form-inline">
             <div class="form-group">
-              <input id="studentName" class="input-styled" type="text" class="form-control" id="" value="Your Name">
+              <input id="studentName" class="input-styled" type="text" class="form-control" id="" value="Name">
               <button id="requestExpert" class="input-styled" type="button">Request an Expert</button>
             </div>
           </form>
@@ -98,13 +102,14 @@
     <div id="expertSignup" class="mastHead" style="display: none;">
       <div class="signin-to-app signin-expert">
         <h2>Welcome to WebRTC</h2>
-        <p>There are students waiting to talk with you.<br><small>Just enter your name and press the button to wait for a call.</small></p>
+        <p>There are students waiting to talk with you.<br><small>Just enter 
+	name and press the button to wait for a call.</small></p>
         
 		<div id="expertSignupForm">
           <form class="form-inline">
             <div class="form-group">
-              <input class="input-styled" type="text" class="form-control" id="expertName" value="Your Name">
-              <input class="input-styled" type="text" class="form-control" id="expertSpecialty" value="Your Specialty">
+              <input class="input-styled" type="text" class="form-control" id="expertName" value="Name">
+              <input class="input-styled" type="text" class="form-control" id="expertSpecialty" value="Specialty">
               <button id="expertSignupButton" class="input-styled" type="button">Wait for Student</button>
             </div>
           </form>
@@ -174,7 +179,6 @@
     <script src="js/bootstrap.min.js"></script>
 	
 	<!-- Our project javascript files -->
-	<script src="js/Blob.js"></script>
 	<script src="js/webrtc.js"></script>
 	<script src="js/app.js"></script>
   </body>
