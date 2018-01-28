@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="#" />
     <title>WebRTC P2P Learning</title>
 	
 	
@@ -70,7 +72,7 @@
 		  
 		  <form class="form-inline">
             <div class="form-group">
-              <input id="studentName" class="input-styled" type="text" class="form-control" id="" value="" placeholder="Enter your name" autofocus>
+              <input id="studentName" class="input-styled" type="text" class="form-control" id="" placeholder="Enter the name" autofocus>
               <button id="requestExpert" class="input-styled" type="button">Request an Expert</button>
             </div>
           </form>
@@ -108,8 +110,8 @@
 		<div id="expertSignupForm">
           <form class="form-inline">
             <div class="form-group">
-              <input class="input-styled" type="text" class="form-control" id="expertName" value="" placeholder="Enter your name" autofocus>
-              <input class="input-styled" type="text" class="form-control" id="expertSpecialty" placeholder="Enter your speciality" autofocus>
+              <input class="input-styled" type="text" class="form-control" id="expertName" placeholder="Enter the expert name" autofocus>
+              <input class="input-styled" type="text" class="form-control" id="expertSpecialty" placeholder="Enter the specialty" autofocus>
               <button id="expertSignupButton" class="input-styled" type="button">Wait for Student</button>
             </div>
           </form>
@@ -155,7 +157,7 @@
   
           <form class="send-message form-inline">
             <div class="form-group">
-			  <input id="myMessage" class="input-styled" type="text" class="form-control" id="" value="" placeholder="Enter your message" autofocus>
+			  <input id="myMessage" class="input-styled" type="text" class="form-control" id="" value="">
 			  <button id="sendMessage" class="input-styled" type="button">Send Message</button>
             </div>
           </form>
@@ -165,7 +167,7 @@
         <div class="right">
   
           <div id="messageHolder" class="message-holder">
-			<div id="messageIn" class="message-in"></div>
+			<div id="messageInName" class="message-in"></div>
 			<div id="messageOutName" class="message-out"></div>
           </div>
         </div>
