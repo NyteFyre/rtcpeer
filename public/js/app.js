@@ -46,7 +46,7 @@ requestExpert.addEventListener('click', function(ev){
 	expertListing.style.display = 'none';
 	
 	//The student joins the signaling room in socket.io
-	studentUserName = studentName.value || 'Student';
+	studentUserName = studentName.value || 'no name';
 	myName = studentUserName;
 	io.emit('signal', {"user_type": "student", "user_name": studentUserName, "user_data": "no data, just a student", "command": "joinroom"});
 	console.log("student " + studentUserName + " has joined.");
@@ -73,7 +73,7 @@ expertSignupButton.addEventListener('click', function(ev){
 	waitingForStudent.style.display = 'block';
 	
 	//The expert joins the signaling room in socket.io
-	expertUserName = expertName.value || 'Expert';
+	expertUserName = expertName.value || 'no name';
 	myName = expertUserName;
 	io.emit('signal', {"user_type": "expert", "user_name": expertUserName, "user_data": expertSpecialty.value, "command": "joinroom"});
 	console.log("Dr. " + expertUserName + " has joined.");
@@ -89,7 +89,7 @@ callExpert.addEventListener('click', function(ev){
 	videoPageDiv.style.display = 'block';
 	
 	//Send a signal that the student is calling
-	studentUserName = studentName.value || 'Student';
+	studentUserName = studentName.value || 'no name';
 	io.emit('signal', {"user_type": "student", "user_name": studentUserName, "user_data": "calling expert", "command": "callexpert"});
 	console.log("student " + studentUserName + " is calling.");
 	
